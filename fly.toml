@@ -4,11 +4,9 @@
 #
 
 app = 'iamdemolitionman-com'
-primary_region = 'iad'
+primary_region = 'atl'
 
 [build]
-  [build.args]
-    GO_VERSION = '1.22'
 
 [env]
   PORT = '8080'

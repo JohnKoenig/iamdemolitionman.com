@@ -1,14 +1,11 @@
-ARG GO_VERSION=1
-FROM golang:${GO_VERSION}-bookworm as builder
+# Use the official Nginx image as the base image
+FROM nginx:latest
 
-WORKDIR /usr/src/app
-COPY go.mod go.sum ./
-RUN go mod download && go mod verify
-COPY . .
-RUN go build -v -o /run-app .
+# Copy website files to the appropriate directory
+COPY ./website/ /usr/share/nginx/html/
 
+# Expose port 80
+EXPOSE 80
 
-FROM debian:bookworm
-
-COPY --from=builder /run-app /usr/local/bin/
-CMD ["run-app"]
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]
