@@ -1,11 +1,11 @@
-# Use the official Nginx image as the base image
-FROM nginx:latest
+# Use an official Nginx image as the base image
+FROM nginx:alpine
 
-# Copy website files to the default Nginx HTML directory
+# Copy the static website files to the Nginx HTML directory
 COPY ./website/ /usr/share/nginx/html/
 
-# Expose port 80 to allow external access
+# Expose port 80 to serve the website
 EXPOSE 80
 
-# Start the Nginx server
+# Start Nginx server
 CMD ["nginx", "-g", "daemon off;"]
