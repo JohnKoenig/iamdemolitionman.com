@@ -1,0 +1,35 @@
+body {
+  background-color: white;
+  font-family: 'Inter';
+  font-size: 6vw;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: 'Inter';
+    font-size: 8vw;
+  }
+  .mainlogo {
+    width: 100%;
+  }
+}
+p {
+  font-family: 'Inter';
+  font-size: 4vmin;
+}
+h1 {
+  font-family: 'Inter';
+  font-size: 8vmin;
+}
+h3 {
+  font-family: 'Inter';
+  font-size: 6vmin;
+}
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.footer {
+  display:inline-block
+}
