@@ -1,17 +1,11 @@
-# Use an official Node.js runtime as a parent image
-FROM node:18
+# Use the official Nginx image as the base image
+FROM nginx:latest
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Copy website files to the default Nginx HTML directory
+COPY ./website/ /usr/share/nginx/html/
 
-# Copy the website files to the container
-COPY ./website/ /usr/src/app/
+# Expose port 80 to allow external access
+EXPOSE 80
 
-# Install dependencies
-RUN npm install
-
-# Expose the port the app runs on
-EXPOSE 3000
-
-# Start the web server
-CMD ["npm", "start"]
+# Start the Nginx server
+CMD ["nginx", "-g", "daemon off;"]
