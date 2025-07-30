@@ -25,13 +25,14 @@ h3 {
   font-size: 6vmin;
 }
 div {
+
+}
+.footer {
+  display:inline-block
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 30px;
   padding-right: 30px;
   width: 400px;
   height: 300px;
-}
-.footer {
-  display:inline-block
 }
