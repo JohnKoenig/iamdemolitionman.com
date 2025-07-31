@@ -24,12 +24,12 @@ h3 {
   font-family: 'Inter';
   font-size: 6vmin;
 }
-div {
-
+.main {
+  width: 100%;
 }
 .footer {
   display: inline-block;
-  margin: 20px auto;
+  padding: 20px;
   width: 300hw;
   vertical-align: middle;
 }
