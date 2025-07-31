@@ -28,11 +28,8 @@ div {
 
 }
 .footer {
-  display:inline-block
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 400px;
-  height: 100%;
+  display: inline-block;
+  margin: 20px auto;
+  width: 300hw;
+  vertical-align: middle;
 }
