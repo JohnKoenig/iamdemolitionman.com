@@ -13,19 +13,12 @@ body {
   }
   .mainlogo {
     width: 100%;
+    height: auto;
   }
 }
 p {
   font-family: 'Inter';
   font-size: 4vmin;
-}
-h1 {
-  font-family: 'Inter';
-  font-size: 8vmin;
-}
-h3 {
-  font-family: 'Inter';
-  font-size: 6vmin;
 }
 .main {
   width: 100%;
