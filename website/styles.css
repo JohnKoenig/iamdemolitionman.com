@@ -3,6 +3,9 @@ body {
   font-family: 'Inter';
   font-size: 6vw;
 }
+.mainlogo {
+  height: 100%;
+}
 @media only screen and (max-width: 600px) {
   body {
     font-family: 'Inter';
