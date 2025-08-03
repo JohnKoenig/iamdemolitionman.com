@@ -51,7 +51,7 @@ img {
 .ticker-content {
   display: inline-block; /* Allows content to be on a single line */
   animation: scroll-left 20s linear infinite; /* Adjust duration as needed */
-  padding-right: 20px;
+  padding-right: 24px;
 }
 
 @keyframes scroll-left {
