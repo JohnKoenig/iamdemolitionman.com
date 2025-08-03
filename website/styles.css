@@ -6,6 +6,9 @@ body {
 .mainlogo {
   height: 100%;
 }
+.mainlogo2 {
+  height: 90%;
+}
 @media only screen and (max-width: 600px) {
   body {
     font-family: 'Inter';
@@ -15,6 +18,11 @@ body {
     width: 100%;
     height: auto;
   }
+}
+.link {
+  color: black;
+  font-family: 'Inter';
+  font-size: 1vmin;
 }
 p {
   font-family: 'Inter';
@@ -31,4 +39,26 @@ img {
   display: inline-block;
   padding: 20px;
   vertical-align: middle;
+}
+.ticker-container {
+  width: 100%; /* Or a specific width */
+  overflow: hidden;
+  white-space: nowrap; /* Prevents content from wrapping */
+  position: absolute;
+  bottom: 0; /* Positions ticker at the bottom */
+}
+
+.ticker-content {
+  display: inline-block; /* Allows content to be on a single line */
+  animation: scroll-left 20s linear infinite; /* Adjust duration as needed */
+  padding-right: 20px;
+}
+
+@keyframes scroll-left {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-100%); /* End off-screen to the left */
+  }
 }
